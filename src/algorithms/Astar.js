@@ -1,7 +1,7 @@
 
 export function Astar(grid, startNode, finishNode) {
 
-    startNode.hn_score = heuristic(startNode, finishNode)
+    startNode.hn_score = 0;
     const visitedNodesInOrder = [];
     const unvisitedNodes = getAllNodes(grid);
     
