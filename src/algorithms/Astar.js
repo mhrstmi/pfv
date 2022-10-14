@@ -2,6 +2,7 @@
 export function Astar(grid, startNode, finishNode) {
 
     startNode.hn_score = 0;
+    startNode.fn_score = 0;
     const visitedNodesInOrder = [];
     const unvisitedNodes = getAllNodes(grid);
     
